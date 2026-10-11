@@ -15,14 +15,14 @@ const github = 'https://github.com/OpenALC';
     <meta property="og:description" content="探索 Cluster Link 与 Cluster Route，参与 OpenALC 开源项目。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://openalc.github.io/" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/brand/cluster-route.svg" />
     <link rel="canonical" href="https://openalc.github.io/" />
     <title>OpenALC — 让连接更自由，让工具更开放</title>
   </head>
   <body>
     <a class="skip-link" href="#main">跳转到主要内容</a>
     <header class="header">
-      <a class="brand" href="#" aria-label="OpenALC 首页"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 25 16 7l9 18M11 19h10"/></svg></span>OpenALC<span class="brand-dot">/</span></a>
+      <a class="brand" href="#" aria-label="OpenALC 首页"><span class="brand-mark"><img src="/brand/cluster-route.svg" width="36" height="36" alt="" /></span>OpenALC<span class="brand-dot">/</span></a>
       <nav aria-label="主导航"><a href="#projects">开源项目</a><a href="#about">关于我们</a><a href="#contribute">参与贡献</a></nav>
       <a class="header-github" href={github} target="_blank" rel="noopener noreferrer"><Icon name="github" size={18}/><span>GitHub</span><span aria-hidden="true">↗</span></a>
       <button class="menu-button" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航"><span></span><span></span></button>
@@ -43,7 +43,7 @@ const github = 'https://github.com/OpenALC';
             <svg class="connection-lines" viewBox="0 0 520 340" preserveAspectRatio="none" aria-hidden="true"><path class="wire" d="M88 80H175Q190 80 190 95V150H260M88 260H175Q190 260 190 245V190H260M260 170H330Q345 170 345 155V80H440M345 170V250Q345 260 360 260H440"/><path class="wire-flow" d="M88 80H175Q190 80 190 95V150H260M260 170H330Q345 170 345 155V80H440"/><circle cx="190" cy="150" r="3"/><circle cx="345" cy="170" r="3"/></svg>
             <div class="endpoint endpoint-one"><span class="node-symbol">⌘</span><span>YOUR NETWORK</span></div>
             <div class="endpoint endpoint-two"><Icon name="code" size={27}/><span>YOUR CLIENT</span></div>
-            <div class="core"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M15 48 32 15l17 33M23 36h18"/></svg><strong>OpenALC</strong><span>CONNECT. ROUTE.</span></div>
+            <div class="core"><img src="/brand/cluster-route.svg" width="48" height="48" alt="" /><strong>OpenALC</strong><span>CONNECT. ROUTE.</span></div>
             <div class="endpoint endpoint-three"><span class="node-symbol">◎</span><span>OPEN NETWORK</span></div>
             <div class="endpoint endpoint-four"><span class="node-symbol">✳</span><span>MODEL PROVIDERS</span></div>
             <span class="diagram-tag tag-link">Cluster Link</span><span class="diagram-tag tag-route">Cluster Route</span>
@@ -60,7 +60,7 @@ const github = 'https://github.com/OpenALC';
           {projects.map((project, index) => <article class:list={['project-card', index === 0 ? 'project-link' : 'project-route']}>
             <div class="project-visual" aria-hidden="true">
               <div class="visual-top"><span>{project.category}</span><span>PROJECT {project.number}</span></div>
-              {index === 0 ? <div class="link-visual"><span class="link-orbit orbit-one"></span><span class="link-orbit orbit-two"></span><span class="link-orbit orbit-three"></span><div class="visual-icon"><Icon name="link" size={54}/></div><span class="visual-chip chip-one">CONFIG</span><span class="visual-chip chip-two">CONNECT</span><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span></div> : <div class="route-visual"><div class="route-input">CLIENT <span>→</span></div><div class="route-hub"><Icon name="route" size={32}/></div><div class="route-outputs"><span><i></i> ANTHROPIC</span><span><i></i> OPENAI</span><span><i></i> PROVIDERS</span></div></div>}
+              {index === 0 ? <div class="link-visual"><span class="link-orbit orbit-one"></span><span class="link-orbit orbit-two"></span><span class="link-orbit orbit-three"></span><div class="visual-icon"><Icon name="link" size={54}/></div><span class="visual-chip chip-one">CONFIG</span><span class="visual-chip chip-two">CONNECT</span><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span></div> : <div class="route-visual"><div class="route-input">CLIENT <span>→</span></div><div class="route-hub"><img src="/brand/cluster-route.svg" width="56" height="56" alt="" /></div><div class="route-outputs"><span><i></i> ANTHROPIC</span><span><i></i> OPENAI</span><span><i></i> PROVIDERS</span></div></div>}
             </div>
             <div class="project-content"><div class="project-title"><h3>{project.name}</h3><span class="language"><i></i>{project.language}</span></div><p>{project.description}</p><div class="tags">{project.tags.map(tag => <span>{tag}</span>)}</div><div class="project-links"><a href={project.repo} target="_blank" rel="noopener noreferrer">探索项目 <Icon size={18}/></a><a href={project.readme} target="_blank" rel="noopener noreferrer">阅读文档 <span aria-hidden="true">↗</span></a></div>{index === 0 && <small class="upstream">延续 Clash Verge / Clash Verge Rev 开源项目</small>}</div>
           </article>)}
@@ -72,7 +72,7 @@ const github = 'https://github.com/OpenALC';
       </section>
       <section id="contribute" class="contribute wrap" aria-labelledby="contribute-title"><div class="contribute-banner"><div><span class="eyebrow">03 / BUILD WITH US</span><h2 id="contribute-title">下一步，和我们一起写<span>↗</span></h2><p>发现问题，分享想法，或提交你的第一行代码。</p></div><a class="button button-dark" href={`${github}?tab=repositories`} target="_blank" rel="noopener noreferrer">参与开源 <Icon name="github"/></a><span class="banner-watermark" aria-hidden="true">{ }</span></div><div class="contribution-paths"><a href="https://github.com/OpenALC/cluster-route/issues" target="_blank" rel="noopener noreferrer"><span>01</span><strong>反馈问题</strong><span>提交 Issue，帮助项目变得更好</span><Icon size={18}/></a><a href="https://github.com/OpenALC/cluster-route/pulls" target="_blank" rel="noopener noreferrer"><span>02</span><strong>贡献代码</strong><span>从一个小改进开始</span><Icon size={18}/></a><a href="https://github.com/OpenALC/Cluster-Link#readme" target="_blank" rel="noopener noreferrer"><span>03</span><strong>完善文档</strong><span>让下一位使用者更容易上手</span><Icon size={18}/></a></div></section>
     </main>
-    <footer class="footer wrap"><a class="brand" href="#">OpenALC<span class="brand-dot">/</span></a><span>开放的代码，连接更多可能。</span><div><span>© {new Date().getFullYear()} OpenALC</span><a href={github} target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#">回到顶部 ↑</a></div></footer>
+    <footer class="footer wrap"><a class="brand" href="#"><span class="brand-mark"><img src="/brand/cluster-route.svg" width="36" height="36" alt="" /></span>OpenALC<span class="brand-dot">/</span></a><span>开放的代码，连接更多可能。</span><div><span>© {new Date().getFullYear()} OpenALC</span><a href={github} target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#">回到顶部 ↑</a></div></footer>
     <script>
       const menu = document.querySelector<HTMLButtonElement>('.menu-button');
       const mobileNav = document.querySelector<HTMLElement>('#mobile-nav');

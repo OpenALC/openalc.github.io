@@ -79,18 +79,15 @@ p {
 }
 .brand-mark {
   display: flex;
-  width: 33px;
-  height: 33px;
-  background: var(--dark);
-  border-radius: 9px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
 }
-.brand-mark svg {
+.brand-mark img {
+  display: block;
   width: 100%;
-  fill: none;
-  stroke: var(--green);
-  stroke-width: 2.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  height: 100%;
+  object-fit: contain;
 }
 .brand-dot {
   font-size: 10px;
@@ -342,14 +339,11 @@ p {
   justify-content: center;
   color: #213120;
 }
-.core svg {
-  width: 44px;
-  height: 44px;
-  fill: none;
-  stroke: #263b23;
-  stroke-width: 3.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.core img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 .core strong {
   font-size: 18px;
@@ -640,6 +634,12 @@ h2 > span {
   height: 1px;
   background: #bcb1d2;
   right: 100%;
+}
+.route-hub img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 .route-hub::after {
   content: "";

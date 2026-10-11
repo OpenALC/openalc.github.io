@@ -28,4 +28,8 @@ npm run preview
 - 页面样式：`src/styles/global.css`
 - 站点地址：`astro.config.mjs`
 
+## Logo
+
+主页品牌图标与 favicon 使用 [cluster-route 的原始 SVG Logo](https://github.com/OpenALC/cluster-route/blob/179c7a8cef4b6c17b5951cb34aeac5068c598b64/web/public/logo.svg)，保留原始颜色和比例。本地文件为 `public/brand/cluster-route.svg`；原项目的 MIT 许可保存在 `public/brand/LICENSE.cluster-route.txt`。
+
 项目内容根据 OpenALC 的两个公开仓库整理（2026-10-11）。首页架构图是概念示意，不读取实时服务状态。Cluster Link 的上游来源在项目卡片内明确标注，下载与安装以各项目 README 为准。
